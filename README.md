@@ -2,6 +2,8 @@
 
 [This README in russian](README.ru.md)
 
+This is a translated copy of a [repository](https://github.com/OMALOE/hse22_project_Apicomplexans) dedicated to a group project in which I participated.
+
 **Внимание!!!** Данный .md файл получился очень большим, поэтому при попытке просто посмотреть его из репозитория, он будет отображаться не полностью. Чтобы увидеть отчёт в полном объёме, можно либо открыть этот файл отдельно, либо пройти по [ссылке](https://github.com/OMALOE/hse22_project_Apicomplexans/blob/main/README.md).
 
 <h3> Участники </h3>
