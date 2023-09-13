@@ -4,24 +4,24 @@
 
 This is a translated copy of a [repository](https://github.com/OMALOE/hse22_project_Apicomplexans) dedicated to a group project in which I participated.
 
-**Внимание!!!** Данный .md файл получился очень большим, поэтому при попытке просто посмотреть его из репозитория, он будет отображаться не полностью. Чтобы увидеть отчёт в полном объёме, можно либо открыть этот файл отдельно, либо пройти по [ссылке](https://github.com/OMALOE/hse22_project_Apicomplexans/blob/main/README.md).
+**Attention!!!** This .md file turned out to be very large, so if you try to simply view it from the repository, it will not be displayed in full. To see the report in full, you can either open this file separately or follow [link](https://github.com/OMALOE/hse22_project_Apicomplexans/blob/main/README.md).
 
-<h3> Участники </h3>
+<h3> Participants </h3>
 
-| Участник  | Род | Git | 
+| Participant  | Genus | Git | 
 |---|---|---|
 | Архипов Дмитрий  |Eimeria (mitis, praecox, maxima, acervulina, necatrix) | https://github.com/OMALOE/hse22_project_bioinf |
 | Волгунов Фёдор   | Theileria, Babesia |https://github.com/hq43et28ms9z/hse22_project |
-| Дыбовский Леонид  | Plasmodium | https://github.com/LeonidDybovskij/hse_project_plasmodium |
+| Dybovskii Leonid  | Plasmodium | https://github.com/LeonidDybovskij/hse_project_plasmodium |
 | Марусев Егор  | Cryptosporidium    | https://github.com/egormarusev/hse22_project_bio.git |
 | Галкина Мария  | Babesia| https://github.com/galkinamariia/hse22_project |
 | Пирожкина Мария  |Porospora, Gregarina niphandrodes, Nephromyces, Haemoproteus  | https://github.com/Pirozhok1967/hse22_project |
 | Тарасова Мария  |Plasmodium( relictum, reichenowi, berghei ANKA), Besnoitia, Neospora   | https://github.com/MariaTar7/hse22_project/ |
 | Шмелев Алексей |Plasmodium (chabaudi, fragile, gallinaceum, coatneyi, malariae)| https://github.com/alexeyshmelev/hse22_project |
 | Жукова Юлия  | Eimeria   (brunetti,  tenella, maxima, acervulina, necatrix)    | https://github.com/ZhukovaJul/hse22_project.git |
-| Смирнов Георгий  |Toxoplasma, Plasmodium(sp. gorilla clade G2, cynomolgi strain B, vinckei, inui San Antonio 1) | пока нет |
+| Смирнов Георгий  |Toxoplasma, Plasmodium(sp. gorilla clade G2, cynomolgi strain B, vinckei, inui San Antonio 1) | not yet |
 
-<h3> Взятые виды: </h3>
+<h3> Species taken: </h3>
 
 ##### *Plasmodium*
  * *falciparum*
@@ -78,49 +78,49 @@ This is a translated copy of a [repository](https://github.com/OMALOE/hse22_proj
 ##### *Toxoplasma*
  * *gondii ME49*
 
-<h3> Создание ортологичных кластеров внутри таксона </h3> 
-Для создания кластеров был запущен proteinortho на 44 геномах, скачанных с помощью скрипта на bash (папка download_files).
-Результат - в файле full_gca_44.tsv
+<h3> Creation of orthologous clusters within a taxon </h3> 
+To create clusters, proteinortho was run on 44 genomes downloaded using a bash script (download_files folder).
+The result is in the file full_gca_44.tsv
 
-<h3> Статистика по кластерам  </h3> 
-Для дополнения таблицы статистикой был использован скрипт на python (файл group_clusters.py, папка src)
-Всего было построено 26462 кластера. Их распределение представлено на двух картинках ниже.
+<h3> Cluster statistics  </h3> 
+To supplement the table with statistics, a python script was used (file group_clusters.py, folder src)
+A total of 26,462 clusters were built. Their features are presented in two pictures below.
 
-Распределение числа геномов, содержащих белки в кластере (количество ортологов):
+Distribution of the number of genomes containing proteins in the cluster (number of orthologs):
 
 ![gcf_gca_44_clust_by_number_of_genoms](https://user-images.githubusercontent.com/60808642/174497142-7afd4c5f-5239-4322-ba56-fbc879cc2ae9.png)
 
-Распределение числа белков на кластер (с учетом числа паралогов внутри каждого вида):
+Distribution of the number of proteins per cluster (taking into account the number of paralogues within each species):
 
 ![gcf_gca_44_clust_by_number_of_proteins](https://user-images.githubusercontent.com/60808642/174497029-1004d50f-6a03-4200-b6c4-a88ddbb0a272.png)
 
-Как видно из графиков, большинство кластеров охватывает всего несколько видов. Поэтому для дальнейшей работы была взята отсечка в 22 генома на кластер. Таких кластеров оказалось 2363, их распределение показано на рисунках ниже.
+As can be seen from the graphs, most clusters cover only a few species. Therefore, for further work, a cutoff of 22 genomes per cluster was taken. There were 2363 such clusters, their distribution is shown in the figures below.
 
-Распеределение числа геномов, содержащих белки в кластере (количество ортологов):
+Distribution of the number of genomes containing proteins in the cluster (number of orthologs):
 
 ![full_gca_cluster_g_stat_22_plus](https://user-images.githubusercontent.com/60808642/174497118-0f541621-4200-4005-905a-33f4077524ed.png)
 
-Распределение числа белков на кластер (с учетом числа паралогов внутри каждого вида):
+Distribution of the number of proteins per cluster (taking into account the number of paralogues within each species):
 
 ![full_gca_cluster_p_stat_22_plus](https://user-images.githubusercontent.com/60808642/174497123-52c7d0ce-a3b0-4509-bb29-ebb24ddcb8b3.png)
 
-Нужно отметить, что среди этих 2363 кластеров был 51 кластер, содержащий белки из всех 44 видов.
-Полная статистика по кластерам - в файле full_gca_cluster_stat_with_function.tsv
+It should be noted that among these 2363 clusters, there were 51 clusters containing proteins from all 44 species.
+Full statistics on clusters - in the file full_gca_cluster_stat_with_function.tsv
 
-<h3> Выбор кластеров </h3> 
+<h3> Selecting Clusters </h3> 
 
-Дополнение таблицы числами Z-SCORE осуществлялось с помощью файла group.py, работающего со скачанными для 44 видов файлами fna и feature_table.txt (папка src). Результат - в файле clusters_with_z_score.tsv. Нужно отметить, что в качестве tss генов был взят только промотор (300 нуклеотидов одну или другую сторону, в зависимости от стренда).
+The table was supplemented with Z-SCORE numbers using the group.py file, which works with the fna and feature_table.txt files downloaded for 44 species (src folder). The result is in the file clusters_with_z_score.tsv. It should be noted that only the promoter was taken as gene's tss (300 nucleotides on one side or the other, depending on the strand).
 
-<h3> Тепловая карта  </h3> 
+<h3> Heat map  </h3> 
 
-Серым обозначены ячейки, имеющие score < 500 (что гарантирует значимость), а чёрным - ячейки, не имеющие score совсем (т.е. нет пересечения с генами, в которых есть Z-DNA). Также стоит отметить, что на данной картинке изображены первые 20 из 2363 найденных кластеров (сортировка по убыванию была произведена по среднему score в строке).
+Gray indicates cells that have a score < 500 (which guarantees significance), and black indicates cells that do not have a score at all (i.e., there is no intersection with genes that contain Z-DNA). It is also worth noting that this picture shows the first 20 of the 2363 clusters found (sorting in descending order was done by the average score in the row).
 
 ![clusters](https://user-images.githubusercontent.com/60858323/174839838-b834b3a4-134f-46d0-a298-a8e6a5a0debf.jpg)
 
 
-<h3> Функции белков в кластерах </h3> 
+<h3> Functions of proteins in clusters </h3> 
 
-|  Номер кластера  | Функция                                                    |
+|  Cluster number  | Function                                                    |
 |---:|:-------------------------------------------------------------------------|
 |  0 | 40S ribosomal protein S7, putative                                       |
 |  1 | S-adenosylmethionine synthetase, putative                                |
@@ -144,25 +144,25 @@ This is a translated copy of a [repository](https://github.com/OMALOE/hse22_proj
 | 19 | ribonucleoside-diphosphate reductase small chain, putative               |
 | 20 | phosphatidylinositol 3- and 4-kinase, putative                           |
 
-<h3> Визуализация расположение участков Z-DNA относительно генов </h3> 
+<h3> Visualization of the location of Z-DNA regions relative to genes </h3> 
 
-Для визуализации были отобраны два кластера (7 и 10), в которых имелось наибольшее количество генов, которые имели Z-DNA в промотерах с большим score. Далее, из этих кластеров было отобрано по 5 организмов, геномы которых удовлетворяли ранее перечисленным условиям. Консервативность Z-DNA прослеживается.
+For visualization, two clusters (7 and 10) were selected, which had the largest number of genes that had Z-DNA in promoters with a high score. Next, from these clusters, 5 organisms were selected, the genomes of which satisfied the previously listed conditions. The conservation of Z-DNA can be traced.
 
-* Для кластера 7
+* For cluster 7
 
 ![clusters (3)](https://user-images.githubusercontent.com/60858323/175046137-c2d7bd1e-f913-4966-9c6f-27187f75e681.jpg)
 
 
-* Для кластера 10
+* For cluster 10
 
 ![clusters (2)](https://user-images.githubusercontent.com/60858323/175046093-172b1062-c700-4e1a-94f2-cb14dbe3ae3e.jpg)
 
 
-<h3> Выравнивания </h3> 
+<h3> Alignments </h3> 
 
-Можно заметить, что качественным получилось только аминокислотное выравнивание.
+It can be noted that only the amino acid alignment turned out to be of high quality.
 
-<details><summary>Аминокислотное выравнивание для кластера 7</summary>
+<details><summary>Amino acid alignment for cluster 7</summary>
   
   ```
 >BAM40339.1
@@ -319,7 +319,7 @@ RDNLTLWASDIQSDSVDDKQ-----------T-KPDD
   ```
 </details>
   
-<details><summary>Аминокислотное выравнивание для кластера 10</summary>
+<details><summary>Amino acid alignment for cluster 10</summary>
   
   ```
 >EDO08452.1
@@ -470,7 +470,7 @@ S---------------GY--MQ
   ```
 </details>
 
-<details><summary>Нуклеотидное выравнивание для кластера 7</summary>
+<details><summary>Nucleotide alignment for cluster 7</summary>
   
   ```
 >CDJ36308.1
@@ -8643,19 +8643,19 @@ TTA---A-TT----------------------------------------------------GCTTCAT-----------
   ```
 </details>  
   
-<h3> Квадруплексы </h3>
+<h3> Quadruplexes </h3>
 
-Для поиска квадруплексов был использован pqsfinder (папка src, group.Rmp).
-Надо отметить, что участки квадруплексов не пересекались, поэтому bedtools merge для них не применялся. Bedtools Intersect применялся с полученными ранее tss файлами. Топ 20 кластеров были выбраны среди кластеров, содержащих белки для не менее, чем 30 видов и были отсортированы по среднему score (включая нулевые значения).
+To search for quadruplexes, pqsfinder was used (folder src, group.Rmp).
+It should be noted that the quadruplex sections did not intersect, so bedtools merge was not used for them. Bedtools Intersect was used with the tss files obtained earlier. The top 20 clusters were selected from clusters containing proteins for at least 30 species and were sorted by average score (including zero values).
 
-Тепловая карта данных кластеров представлена ниже: 
+A heat map of these clusters is presented below:
 
 ![q_clusters](https://user-images.githubusercontent.com/60808642/174879802-a443d80d-0c6a-4264-bc46-d173620fa080.jpg)
 
-Функции белков, представленных в кластере, взяты как самые популярные среди описаний этих 44 белков.
-Они представлены ниже.
+The functions of the proteins presented in the cluster are taken as the most popular among the descriptions of these 44 proteins.
+They are presented below.
 
-|  Номер кластера | Функция                                               |
+|  Cluster number | Function                                               |
 |---:|:-------------------------------------------------------|
 |  0 | ubiquinone biosynthesis protein COQ4, putative         |
 |  1 | exosome complex component CSL4, putative               |
@@ -8678,13 +8678,13 @@ TTA---A-TT----------------------------------------------------GCTTCAT-----------
 | 18 | small subunit rRNA processing factor, putative         |
 | 19 | TPR domain-containing protein, putative                |
 
-Как видно, наличие квадруплексов коррелирует преимущественно внутри рода, в целом же их довольно мало, а для многих представителей данных внутри кластеров белков не нашлось вовсе. 
+As can be seen, the presence of quadruplexes correlates mainly within the genus, but in general there are quite a few of them, and for many representatives no data were found within protein clusters at all.
 
-Визуализация для первого кластера (ubiquinone biosynthesis protein COQ4, putative):
+Visualization for the first cluster (ubiquinone biosynthesis protein COQ4, putative):
 
 ![cluster1](https://user-images.githubusercontent.com/60808642/175067247-9ddd3c64-2ded-44e0-bd98-0c2fee83af39.png)
 
-Визуализация для второго кластера (exosome complex component CSL4, putative):
+Visualization for the second cluster (exosome complex component CSL4, putative):
 
 ![cluster2](https://user-images.githubusercontent.com/60808642/175067371-f3e1202e-f12f-47e5-a49d-4b22510b018f.png)
 
