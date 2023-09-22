@@ -1,7 +1,5 @@
 # Apicomplexans
 
-[This README in russian](README.ru.md)
-
 This is a translated copy of a [repository](https://github.com/OMALOE/hse22_project_Apicomplexans) dedicated to a group project in which I participated.
 
 **Attention!!!** This .md file turned out to be very large, so if you try to simply view it from the repository, it will not be displayed in full. To see the report in full, you can either open this file separately or follow the [link](https://github.com/LeonidDybovskij/hse_project_group/blob/main/README.md).
