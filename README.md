@@ -77,12 +77,12 @@ This is a translated copy of a [repository](https://github.com/OMALOE/hse22_proj
  * *gondii ME49*
 
 <h3> Creation of orthologous clusters within a taxon </h3> 
-To create clusters, proteinortho was run on 44 genomes downloaded using a bash script (download_files folder).
-The result is in the file full_gca_44.tsv
+To create the clusters of orthologous proteins for the species above, proteinortho was run on 44 genomes downloaded via a bash script (which can be found in the "download_files" folder).
+The raw data file was called "full_gca_44.tsv".
 
 <h3> Cluster statistics  </h3> 
-To supplement the table with statistics, a python script was used (file group_clusters.py, folder src)
-A total of 26,462 clusters were built. Their features are presented in two pictures below.
+To supplement the table with statistics, a python script was used ("group_clusters.py" in the folder "src")
+A total of 26,462 clusters were built. Their features are presented in two histograms below.
 
 Distribution of the number of genomes containing proteins in the cluster (number of orthologs):
 
@@ -102,16 +102,16 @@ Distribution of the number of proteins per cluster (taking into account the numb
 
 ![full_gca_cluster_p_stat_22_plus](https://user-images.githubusercontent.com/60808642/174497123-52c7d0ce-a3b0-4509-bb29-ebb24ddcb8b3.png)
 
-It should be noted that among these 2363 clusters, there were 51 clusters containing proteins from all 44 species.
-Full statistics on clusters - in the file full_gca_cluster_stat_with_function.tsv
+Among these 2363 clusters, there were only 51 clusters which contained proteins from all 44 species.
+The full statistics on clusters is presented in the file "full_gca_cluster_stat_with_function.tsv".
 
 <h3> Selecting Clusters </h3> 
 
-The table was supplemented with Z-SCORE numbers using the group.py file, which works with the fna and feature_table.txt files downloaded for 44 species (src folder). The result is in the file clusters_with_z_score.tsv. It should be noted that only the promoter was taken as gene's tss (300 nucleotides on one side or the other, depending on the strand).
+The table was supplemented with Z-SCORE numbers which had been obtained via the "group.py" script (in the "src" folder). The script requires the corresponding ".fna" and "feature_table.txt" files for work (they were downloaded for all 44 species). The result was placed in the file "clusters_with_z_score.tsv". At this moment, only the promoter was taken as gene's tss (300 nucleotides on one side or the other, depending on the strand).
 
 <h3> Heat map  </h3> 
 
-Gray indicates cells that have a score < 500 (which guarantees significance), and black indicates cells that do not have a score at all (i.e., there is no intersection with genes that contain Z-DNA). It is also worth noting that this picture shows the first 20 of the 2363 clusters found (sorting in descending order was done by the average score in the row).
+The heatmap shows the Z-SCOREs for each protein cluster among the Apicomplexans. Here gray indicates proteins that have a score < 500 (a threshold for significance), whereas black indicates proteins that do not have a score at all (in other words, there is no intersection between proteins and genes that contain Z-DNA). This heatmap shows pnly the first 20 of the 2363 clusters found (sorted in descending order according to the average score).
 
 ![clusters](https://user-images.githubusercontent.com/60858323/174839838-b834b3a4-134f-46d0-a298-a8e6a5a0debf.jpg)
 
@@ -144,7 +144,7 @@ Gray indicates cells that have a score < 500 (which guarantees significance), an
 
 <h3> Visualization of the location of Z-DNA regions relative to genes </h3> 
 
-For visualization, two clusters (7 and 10) were selected, which had the largest number of genes that had Z-DNA in promoters with a high score. Next, from these clusters, 5 organisms were selected, the genomes of which satisfied the previously listed conditions. The conservation of Z-DNA can be traced.
+For visualization, two clusters (7 and 10) were selected, which had the largest number of genes that had Z-DNA in promoters with a high score. Next, from these clusters, 5 organisms were selected, the genomes of which satisfied the previously listed conditions. The conservation of Z-DNA can be traced here.
 
 * For cluster 7
 
@@ -158,7 +158,7 @@ For visualization, two clusters (7 and 10) were selected, which had the largest 
 
 <h3> Alignments </h3> 
 
-It can be noted that only the amino acid alignment turned out to be of high quality.
+Only the amino acid alignment turned out to be of high quality.
 
 <details><summary>Amino acid alignment for cluster 7</summary>
   
@@ -8643,15 +8643,14 @@ TTA---A-TT----------------------------------------------------GCTTCAT-----------
   
 <h3> Quadruplexes </h3>
 
-To search for quadruplexes, pqsfinder was used (folder src, group.Rmp).
-It should be noted that the quadruplex sections did not intersect, so bedtools merge was not used for them. Bedtools Intersect was used with the tss files obtained earlier. The top 20 clusters were selected from clusters containing proteins for at least 30 species and were sorted by average score (including zero values).
+To search for quadruplexes, the pqsfinder algorithm was used (file "group.Rmp" in the "src" folder).
+The quadruplex sections did not intersect, so "bedtools merge" was not used for them. Instead, Bedtools Intersect was used with the tss files obtained earlier. The top 20 clusters were selected from clusters containing proteins for at least 30 species and were sorted by average score (including zero values).
 
 A heat map of these clusters is presented below:
 
 ![q_clusters](https://user-images.githubusercontent.com/60808642/174879802-a443d80d-0c6a-4264-bc46-d173620fa080.jpg)
 
-The functions of the proteins presented in the cluster are taken as the most popular among the descriptions of these 44 proteins.
-They are presented below.
+The functions of the proteins presented in the clusters below are taken as the most popular among the descriptions of these 44 proteins.
 
 |  Cluster number | Function                                               |
 |---:|:-------------------------------------------------------|
