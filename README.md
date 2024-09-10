@@ -1,6 +1,18 @@
 # Apicomplexans
 
-This is a translated copy of a [repository](https://github.com/OMALOE/hse22_project_Apicomplexans) dedicated to a group project in which I participated. The aim of the project was to find the potential Z-DNA regions and quadruplexes in the promoters of the orthologous proteins among the Apicomplexans. 
+This is a translated copy of a [repository](https://github.com/OMALOE/hse22_project_Apicomplexans) dedicated to a group project in which I participated. 
+The aim of the project was to find the potential conservative Z-DNA regions and quadruplexes in the promoters of the orthologous proteins for the Apicomplexa phylum. This was done in the following steps:
+1. Downloading the genomes of the selected organisms in fasta and genbank formats.
+2. Downloading feature tables for the annotation.
+3. Downloading protein sequences in faa format for the clusterization of orthologs.
+4. Prediction of Z-DNA regions in fasta files with a Zhunt algorithm (Python script).
+5. Prediction of quadruplexes with pqsfinder (R script).
+6. Applying bedtools for the intersection of Z-DNA regions (or quadruplexes) with the promoter reqions of genes (using feature tables).
+7. Finding potential ortologous proteins with proteinortho.
+8. Selection of the clusters with conservative and long Z-DNA regions.
+9. Building protein alignments with MUSCLE.
+10. Vizualization of Z-DNA clusters in a heatmap.
+
 
 **Attention!!!** This .md file turned out to be very large, so if you try to simply view it from the repository, it will not be displayed in full. To see the report in full, you can either open this file separately or follow the [link](https://github.com/LeonidDybovskij/hse_project_group/blob/main/README.md).
 
