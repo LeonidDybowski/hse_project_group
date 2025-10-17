@@ -22,7 +22,7 @@ The aim of the project was to find the potential conservative Z-DNA regions and 
 |---|---|---|
 | Архипов Дмитрий  |Eimeria (mitis, praecox, maxima, acervulina, necatrix) | https://github.com/OMALOE/hse22_project_bioinf |
 | Волгунов Фёдор   | Theileria, Babesia |https://github.com/hq43et28ms9z/hse22_project |
-| Dybovskii Leonid  | Plasmodium | https://github.com/LeonidDybovskij/hse_project_plasmodium |
+| Dybovskii Leonid  | Plasmodium | https://github.com/LeonidDybowski/hse_project_plasmodium |
 | Марусев Егор  | Cryptosporidium    | https://github.com/egormarusev/hse22_project_bio.git |
 | Галкина Мария  | Babesia| https://github.com/galkinamariia/hse22_project |
 | Пирожкина Мария  |Porospora, Gregarina niphandrodes, Nephromyces, Haemoproteus  | https://github.com/Pirozhok1967/hse22_project |
